@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/space-portfolio/static/css/main.bed822af.css",
+    "main.js": "/space-portfolio/static/js/main.da0d2f46.js",
+    "static/js/787.1ed0c42c.chunk.js": "/space-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/running.gif": "/space-portfolio/static/media/running.ef71f30bd07f3272672f.gif",
+    "static/media/welcome.jpg": "/space-portfolio/static/media/welcome.f72c3e581a7fcae4555a.jpg",
+    "static/media/astronout.png": "/space-portfolio/static/media/astronout.e41be5480c546d9a9314.png",
+    "static/media/ecommerce.jpg": "/space-portfolio/static/media/ecommerce.bed597b57a8b17d87f91.jpg",
+    "static/media/portfolio.jpg": "/space-portfolio/static/media/portfolio.9e5e06752b6151520727.jpg",
+    "static/media/login.jpg": "/space-portfolio/static/media/login.e66b8c03b8882e0279b8.jpg",
+    "static/media/ufo.gif": "/space-portfolio/static/media/ufo.2ce1dea7970d17fee88e.gif",
+    "index.html": "/space-portfolio/index.html",
+    "main.bed822af.css.map": "/space-portfolio/static/css/main.bed822af.css.map",
+    "main.da0d2f46.js.map": "/space-portfolio/static/js/main.da0d2f46.js.map",
+    "787.1ed0c42c.chunk.js.map": "/space-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bed822af.css",
+    "static/js/main.da0d2f46.js"
+  ]
+}
