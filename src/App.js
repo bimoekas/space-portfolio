@@ -5,6 +5,7 @@ import Contact from './pages/Contact';
 import Experience from './pages/Experience';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects'
+import ReactAudioPlayer from 'react-audio-player';
 
 function App() {
 
@@ -12,8 +13,13 @@ function App() {
     <div className="App">
       <HorizontalScroll>
         <div className="main bg">
+          <div class="surface">
+          </div>
           <div class="container">
-            <img class="ufo" src={require('./assets/ufo.gif')} alt="ufo"/>
+            <div class="ufo">
+              </div>
+              <div class="star">
+              </div>
               <p class="glitch">
                 <span aria-hidden="true"></span>
                   Hi, My Name is Bimo
