@@ -1,6 +1,8 @@
 .App{
   width: 100vw;
   height: 100vh;
+  flex: 1;
+  display: flex;
 }
 
 .main{
@@ -11,15 +13,25 @@
   align-items: center;
 }
 
+.icon{
+  color: green;
+  background-color: yellow;
+  font-size: 100px;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
 .ufo{
-  height: 200px;
-  width: 100%;
+  height: 100%;
+  width: 2%;
   position: absolute;
-  max-width: 600px;
+  max-width: 150px;
   background: url('../assets/ufo.gif');
-  background-size: 200px;
-  top: 0;
-  bottom: 0%;
+  background-size: 100%;
+  top: 10%;
+  bottom: 0;
   left: -2%;
   z-index: 1;
   background-repeat: no-repeat;
@@ -43,7 +55,7 @@
 .surface {
   background: url('../assets/surface.jpg');
   width: 100%;
-  height: 70px;
+  height: 7%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -65,12 +77,12 @@ body {
 }
 
 .astronout {
-  height: 200px;
+  height: 100%;
   width: 100%;
   position: absolute;
   max-width: 600px;
   background: url('../assets/running.gif');
-  background-size: 200px;
+  background-size: 35%;
   top: 80%;
   bottom: 0%;
   left: -2%;
@@ -113,13 +125,6 @@ body {
   animation: blink 1s linear infinite;
   animation-name: blinker;
 }
-
-/* span{
-  font-size: 25px;
-  font-family: cursive;
-  color: white;
-  animation: blink 1s linear infinite;
-} */
 
 @keyframes blinker {
   50% {
@@ -333,7 +338,6 @@ h2 small {
 
 .card:hover .cta-container {
   margin-top: 320px;
-
 }
 
 /* Project ke 2 */
@@ -503,7 +507,7 @@ h2 small {
 .skills {
   position: absolute;
   z-index: 2;
-  width: 800px;
+  width: 10%;
   height: 73%;
   top: 55%;
   left: 30%;
@@ -518,7 +522,7 @@ h2 small {
 }
 
 .skills-bar .bar {
-  margin: 25px 0;
+  margin: 3% 0;
 }
 
 .skills-bar .bar .info span {
@@ -527,14 +531,14 @@ h2 small {
 }
 
 .skills-bar .bar .info {
-  margin-bottom: 8px;
+  margin-bottom: 0.5%;
   color: #07374a;
 }
 
 .skills-bar .bar .progress-line {
   position: relative;
   height: 10px;
-  width: 750px;
+  width: 100%;
   background: #f0f0f0;
   border-radius: 10px;
   transform: scaleX(0);
@@ -589,7 +593,7 @@ h2 small {
   content: "";
   height: 0;
   right: 0;
-  top: -14px;
+  top: -140%;
   width: 0;
   border: 7px solid transparent;
   border-bottom-width: 0px;
@@ -609,7 +613,6 @@ h2 small {
   padding: 1px 8px;
   border-radius: 3px;
 }
-
 
 .progress-line .html::after {
   content: "80%";
@@ -636,149 +639,6 @@ h2 small {
   content: "80%";
 }
 
-/* ////........Media Query........//// */
-
-@media (max-width: 700px) {
-    .skills{
-        width: 80%;
-    }
-
-    .skills-bar .bar .progress-line{
-        width: 100%;
-    }
-}
-
-@media (max-width: 1600px) {
-  .bg, .bg1, .bg2, .bg3, .bg4 {
-    background-size: 110%;
-  }
-  .head, .last {
-    right: 0%;
-  }
-  
-}
-
-@media (max-width: 1500px) {
-  .bg, .bg1, .bg2, .bg3, .bg4 {
-    background-size: 115%;
-  }
-}
-
-@media (max-width: 1400px) {
-  .bg, .bg1, .bg2, .bg3, .bg4 {
-    background-size: 120%;
-  }
-  .head, .last {
-    right: 0%;
-  }
-  
-}
-
-@media (max-width: 1300px) {
-  .bg, .bg1, .bg2, .bg3, .bg4 {
-    background-size: 132%;
-  }
-  .head, .last {
-    right: 0%;
-  }
-  .glitch {
-    font-size: 65px;
-  }
-  .blink {
-    font-size: 35px;
-  }
-  .card, .card2, .card3 {
-    height: 350px;
-    width: 295px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .bg, .bg1, .bg2, .bg3, .bg4 {
-    background-size: 145%;
-  }
-  .head, .last {
-    right: 0%;
-  }
-  .blink {
-    font-size: 25px;
-    bottom: 70%;
-  }
-  .astronout {
-    top: 88%;
-    background-size: 100px;
-  }
-  .glitch {
-    font-size: 60px;
-  }
-  .card, .card2, .card3 {
-    height: 350px;
-    width: 295px;
-  }
-  
-}
-
-@media (max-width: 1100px) {
-  .bg, .bg1, .bg2, .bg3, .bg4 {
-    background-size: 158%;
-  }
-}
-
-@media (max-width: 1000px) {
-  .bg, .bg1, .bg2, .bg3, .bg4 {
-    background-size: 173%;
-  }
-}
-
-@media (max-width: 600px) {
-  .bg, .bg1, .bg2, .bg3, .bg4 {
-    background-size: 290%;
-  }
-  .skills {
-    width: 300px;
-    height: fit-content;
-  }
-  .glitch {
-    width: fit-content;
-  }
-  .card, .card2, .card3 {
-    height: 350px;
-    width: 160px;
-  }
-  .head, .last {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 500px) {
-  .bg, .bg1, .bg2, .bg3, .bg4 {
-    background-size: 350%;
-  }
-  .ufo {
-    width: 70px;
-    height: 70px;
-  }
-  .skills {
-    width: 300px;
-    height: fit-content;
-  }
-  .glitch {
-    font-size: 25px;
-    right: -10%;
-    width: max-content;
-  }
-  .blink {
-    font-size: 25px;
-  }
-  .card, .card2, .card3 {
-    height: 350px;
-    width: 160px;
-  }
-  .head, .last {
-    font-size: 50px;
-  }
-}
-
 .text-center{
   text-align: center;
 }
@@ -786,20 +646,22 @@ h2 small {
 .root-div{
  margin-top: 0px;
  position: absolute;
- width: 1500px;
+ width: 100vw;
 }
 
 .timeline{
-  width: 1000px;
-  height: 750px;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   font-size: 15px;
   color: black;
-  bottom: 4.7%;
+  bottom: 0;
+  top: 20%;
 }
 
 .vertical-timeline-element--work{
   color: rgb(161, 161, 161);
+  font-size: 15px;
 }
 
 .vertical-timeline-element--education{
@@ -809,6 +671,480 @@ h2 small {
 .vertical-timeline-element-title{
   color: black;
 }
+
+/* media query */
+
+@media screen and (max-width: 1281px) {
+  .surface {
+    height: 40px;
+  }
+  .ufo {
+    height: 50%;
+    width: 50%;
+    max-width: 200px;
+    background-size: 100px;
+    top: 5%;
+  }
+  .astronout {
+    background-size: 150px;
+  }
+  .glitch {
+    font-size: 55px;
+  }
+  .blink {
+    font-size: 40px;
+  }
+  .head, .last {
+    font-size: 50px;
+  }
+  .skills {
+    height: 70%;
+    top: 50%;
+  }
+  .skills-bar {
+    padding: 0 30px;
+  }
+  .skills-bar .bar {
+    margin: 8px 0;
+  }
+  .skills-bar .bar .info span{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .skills-bar .bar .info {
+    margin-bottom: 0;
+  }
+  .card {
+    height: 400px;
+    width: 295px;
+  }
+  .card:hover {
+    height: 400px;
+    width: 295px;
+  }
+  .card2 {
+    height: 400px;
+    width: 295px;
+  }
+  .card2:hover {
+    height: 400px;
+    width: 295px;
+  }
+  .card3 {
+    height: 400px;
+    width: 295px;
+  }
+  .card3:hover {
+    height: 400px;
+    width: 295px;
+  }
+  .timeline {
+    font-size: 10px;
+    top: 120px;
+    width: 15%;
+  }
+  .vertical-timeline-element--work{
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .surface {
+    height: 40px;
+  }
+  .ufo {
+    height: 50%;
+    width: 50%;
+    max-width: 200px;
+    background-size: 100px;
+    top: 5%;
+  }
+  .astronout {
+    background-size: 150px;
+  }
+  .glitch {
+    font-size: 55px;
+  }
+  .blink {
+    font-size: 40px;
+  }
+  .head, .last {
+    font-size: 40px;
+    right: auto;
+  }
+  .skills {
+    height: 70%;
+    top: 50%;
+  }
+  .skills-bar {
+    padding: 0 30px;
+  }
+  .skills-bar .bar {
+    margin: 8px 0;
+  }
+  .skills-bar .bar .info span{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .skills-bar .bar .info {
+    margin-bottom: 0;
+  }
+  .card {
+    height: 400px;
+    width: 295px;
+  }
+  .card:hover {
+    height: 400px;
+    width: 295px;
+  }
+  .card2 {
+    height: 400px;
+    width: 295px;
+  }
+  .card2:hover {
+    height: 400px;
+    width: 295px;
+  }
+  .card3 {
+    height: 400px;
+    width: 295px;
+  }
+  .card3:hover {
+    height: 400px;
+    width: 295px;
+  }
+  .timeline {
+    font-size: 10px;
+    top: 120px;
+    width: 15%;
+  }
+  .vertical-timeline-element--work{
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .surface {
+    height: 40px;
+  }
+  .ufo {
+    height: 50%;
+    width: 50%;
+    max-width: 200px;
+    background-size: 100px;
+    top: 5%;
+  }
+  .astronout {
+    background-size: 150px;
+  }
+  .glitch {
+    font-size: 40px;
+  }
+  .blink {
+    font-size: 30px;
+  }
+  .head, .last {
+    font-size: 40px;
+    right: auto;
+  }
+  .skills {
+    height: 70%;
+    width: 600px;
+    top: 50%;
+  }
+  .skills-bar {
+    padding: 3px 30px;
+  }
+  .skills-bar .bar {
+    margin: 8px 0;
+  }
+  .skills-bar .bar .info span{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .skills-bar .bar .info {
+    margin-bottom: 0;
+  }
+  .skills-bar .bar .progress-line {
+    width: 550px;
+  }
+  .card {
+    height: 400px;
+    width: 200px;
+  }
+  .card:hover {
+    height: 400px;
+    width: 200px;
+  }
+  .card_circle {
+    border-radius: 0px;
+    background-size: 400px;
+    margin-left: -90px;
+  }
+  .card2 {
+    height: 400px;
+    width: 200px;
+  }
+  .card2:hover {
+    height: 400px;
+    width: 200px;
+  }
+  .card_circle2 {
+    border-radius: 0px;
+    background-size: 400px;
+    margin-left: -90px;
+  }
+  .card3 {
+    height: 400px;
+    width: 200px;
+  }
+  .card3:hover {
+    height: 400px;
+    width: 200px;
+  }
+  .card_circle3 {
+    border-radius: 0px;
+    background-size: 400px;
+    margin-left: -90px;
+  }
+  .timeline {
+    font-size: 10px;
+    top: 120px;
+    width: 15%;
+  }
+  .vertical-timeline-element--work{
+    font-size: 10px;
+  }
+  .vertical-timeline-element--education{
+    font-size: 10px;
+  }
+  .vertical-timeline-element-title{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .surface {
+    height: 40px;
+  }
+  .ufo {
+    height: 50%;
+    width: 50%;
+    max-width: 200px;
+    background-size: 100px;
+    top: 5%;
+  }
+  .astronout {
+    background-size: 150px;
+  }
+  .glitch {
+    font-size: 25px;
+  }
+  .blink {
+    font-size: 15px;
+  }
+  .head, .last {
+    font-size: 40px;
+    right: auto;
+  }
+  .skills {
+    height: 70%;
+    width: 400px;
+    top: 50%;
+  }
+  .skills-bar {
+    padding: 3px 30px;
+  }
+  .skills-bar .bar {
+    margin: 8px 0;
+  }
+  .skills-bar .bar .info span{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .skills-bar .bar .info {
+    margin-bottom: 0;
+  }
+  .skills-bar .bar .progress-line {
+    width: 350px;
+  }
+  .card {
+    height: 400px;
+    width: 150px;
+  }
+  .card:hover {
+    height: 400px;
+    width: 150px;
+  }
+  .card_circle {
+    border-radius: 0px;
+    background-size: 400px;
+    margin-left: -90px;
+  }
+  .card2 {
+    height: 400px;
+    width: 150px;
+  }
+  .card2:hover {
+    height: 400px;
+    width: 150px;
+  }
+  .card_circle2 {
+    border-radius: 0px;
+    background-size: 400px;
+    margin-left: -90px;
+  }
+  .card3 {
+    height: 400px;
+    width: 150px;
+  }
+  .card3:hover {
+    height: 400px;
+    width: 150px;
+  }
+  .card_circle3 {
+    border-radius: 0px;
+    background-size: 400px;
+    margin-left: -90px;
+  }
+  .timeline {
+    font-size: 10px;
+    top: 120px;
+    width: 15%;
+  }
+  .vertical-timeline-element--work{
+    font-size: 10px;
+  }
+  .vertical-timeline-element--education{
+    font-size: 10px;
+  }
+  .vertical-timeline-element-title{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .surface {
+    height: 40px;
+  }
+  .ufo {
+    height: 25%;
+    width: 25%;
+    max-width: 200px;
+    background-size: 50px;
+    top: 5%;
+    visibility: hidden;
+  }
+  .astronout {
+    background-size: 100px;
+    top: 85%;
+  }
+  .glitch {
+    font-size: 15px;
+  }
+  .blink {
+    font-size: 10px;
+  }
+  .head, .last {
+    font-size: 20px;
+    right: auto;
+  }
+  .skills {
+    height: 70%;
+    width: 15%;
+    top: 50%;
+  }
+  .info {
+    font-size: 10px;
+  }
+  .skills-bar {
+    padding: 0 30px;
+  }
+  .skills-bar .bar {
+    margin: 5px 0;
+  }
+  .skills-bar .bar .info span{
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .skills-bar .bar .info {
+    margin-bottom: 0;
+  }
+  .skills-bar .bar .progress-line {
+    width: 100%;
+  }
+  .bar .progress-line span::after {
+    font-size: 10px;
+    border-radius: 1px;
+  }
+  .card {
+    height: 150px;
+    width: 100px;
+  }
+  .card:hover {
+    height: 150px;
+    width: 100px;
+  }
+  .card_circle {
+    border-radius: 0px;
+    background-size: 400px;
+    margin-left: -90px;
+  }
+  .card2 {
+    height: 150px;
+    width: 100px;
+  }
+  .card2:hover {
+    height: 150px;
+    width: 100px;
+  }
+  .card_circle2 {
+    border-radius: 0px;
+    background-size: 400px;
+    margin-left: -90px;
+  }
+  .card3 {
+    height: 150px;
+    width: 100px;
+  }
+  .card3:hover {
+    height: 150px;
+    width: 100px;
+  }
+  .card_circle3 {
+    border-radius: 0px;
+    background-size: 400px;
+    margin-left: -90px;
+  }
+  .timeline {
+    font-size: 10px;
+    top: 15%;
+    height: 100%;
+    font-size: 1px;
+    width: 15%;
+  }
+  .jobdesc {
+    height: 15px;
+    width: 200px;
+    font-size: 10px;
+  }
+  .vertical-timeline-element--work{
+    font-size: 1px;
+    width: 250px;
+  }
+  .vertical-timeline-element--education{
+    font-size: 1px;
+    width: 250px;
+  }
+  .vertical-timeline-element-title{
+    font-size: 10px;
+  }
+  .jobdesc {
+    font-size: 5px;
+  }
+}
+
+
 
 
 

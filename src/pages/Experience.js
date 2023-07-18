@@ -17,7 +17,7 @@ function Experience() {
           <h3 className='vertical-timeline-element-title'>
           High School at SMKN 1 Depok
           </h3>
-          <p>Software Engineering Majoring</p>
+          <p className='jobdesc'>Software Engineering Majoring</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement 
           className='vertical-timeline-element--work' 
@@ -28,7 +28,7 @@ function Experience() {
           <h3 className='vertical-timeline-element-title'>
           Bumida Syariah Depok
           </h3>
-          <p>Internship Student</p>
+          <p className='jobdesc'>Internship Student</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement 
           className='vertical-timeline-element--work' 
@@ -39,7 +39,7 @@ function Experience() {
           <h3 className='vertical-timeline-element-title'>
           Yakes Telkomedika
           </h3>
-          <p>Data Entry</p>
+          <p className='jobdesc'>Data Entry</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement 
           className='vertical-timeline-element--work' 
@@ -50,7 +50,7 @@ function Experience() {
           <h3 className='vertical-timeline-element-title'>
           Pusat Pengembangan Akuntansi FEB UI
           </h3>
-          <p>Staff Administration</p>
+          <p className='jobdesc'>Staff Administration</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
